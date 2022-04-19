@@ -1,33 +1,40 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
-  html,
-  body {
-    font-size: 62.5%;
-    width: 100%;
-    min-height: 100vh;
-    font-family: 'Raleway', sans-serif;
-  }
-  h1, h2, span, p {
-    color: var(--title);
-  }
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--primary);
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    background-image: url("bg-texture.png");
   }
 
   :root {
+    --primary: #11101d;
     --white: #FFFFFF;
-    --secondary: #4C00E8;
+    --dark: #2c2c6c;
+    --secondary: #4bb5ff;
     --yellow: #F2E205;
     --gray: #5F5F5F;
     --title: #1F1F1F;
     --grayLight: #ECECEC; 
     --black: #171717;
+
+    --container-width-lg: 75%;
+    --container-width-md: 85%;
+    --container-width-ms: 90%;
+
+    --transition: all 400ms ease;
   }
 `;
