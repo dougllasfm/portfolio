@@ -5,6 +5,12 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  > h1 {
+    color: var(--secondary);
+    margin-bottom: 50px;
+    font-size: 24px;
+  }
 `;
 
 export const Resume = styled.div`
@@ -59,6 +65,11 @@ export const Cards = styled.div`
   gap: 5px;
 
   > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
     background: var(--dark);
     border-radius: 10px;
     width: 165px;

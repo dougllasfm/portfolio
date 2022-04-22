@@ -5,7 +5,6 @@ export default createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    list-style: none;
     text-decoration: none;
   }
 
@@ -29,7 +28,7 @@ export default createGlobalStyle`
     --gray: #5F5F5F;
     --title: #1F1F1F;
     --grayLight: #ECECEC; 
-    --black: #171717;
+    --black: #000;
 
     --container-width-lg: 75%;
     --container-width-md: 85%;
