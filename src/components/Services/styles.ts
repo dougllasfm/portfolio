@@ -22,7 +22,7 @@ export const Content = styled.div`
 `;
 
 export const Cards = styled.div`
-  width: 90%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;

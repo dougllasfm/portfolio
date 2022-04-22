@@ -1,3 +1,6 @@
+import { yupResolver } from '@hookform/resolvers/yup';
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
 import {
   Container,
   Content,
@@ -8,7 +11,33 @@ import {
   WhatsAppIcon
 } from "./styles";
 
+type FormProps = {
+  name: string
+  email: string
+  message: string
+}
+
+const schema = yup.object({
+  name: yup.string().required("Informe seu nome"),
+  email: yup.string().email("Informe um email válido").required("Informe um email"),
+  message: yup.string().required("Escreva uma mensagem"),
+}).required();
+
 function Contact() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormProps>({
+    resolver: yupResolver(schema),
+  });
+
+  async function onSubmit(data: FormProps) {
+    try {
+      console.log(data)
+    } catch (error) {}
+  }
+
   return (
     <Container>
       <h1>Contato</h1>
@@ -30,7 +59,30 @@ function Contact() {
             <span>Querência - Mato Grosso</span>
           </div>
         </Networks>
-        <Form></Form>
+        <Form onSubmit={handleSubmit(onSubmit)}>
+          <input
+            type="text"
+            placeholder="Seu nome"
+            {...register("name")}
+          />
+          <p>{errors.name?.message}</p>
+          <input
+            type="text"
+            placeholder="Seu email"
+            {...register("email")}
+          />
+          <p>{errors.email?.message}</p>
+          <textarea
+            placeholder="Mensagem"
+            {...register("message")}
+          />
+          <p>{errors.message?.message}</p>
+
+          <input
+            type="submit"
+            value="Enviar"
+          />
+        </Form>
       </Content>
     </Container>
   );
