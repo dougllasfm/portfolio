@@ -1,5 +1,5 @@
-import { Contact } from "styled-icons/boxicons-solid";
 import About from "../components/About";
+import Contact from "../components/Contact";
 import Header from "../components/Header";
 import Services from "../components/Services";
 import Technologies from "../components/Technologies";

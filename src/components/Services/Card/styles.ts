@@ -14,8 +14,9 @@ export const Container = styled.div`
 
   &:hover {
     background: var(--primary);
-    border-color: var(--dark);
   }
+
+  
 `;
 
 export const Title = styled.div`
@@ -35,12 +36,32 @@ export const Title = styled.div`
   }
 `
 
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 80%;
+  margin: 30px 0 20px 0;
+
+  > span {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: var(--grayLight);
+  }
+
+  > h2 {
+    font-size: 16px;
+    color: var(--grayLight);
+  }
+`
+
 export const List = styled.ul`
-  margin-top: 10px;
   list-style: inside;
 
   > li {
-    margin: 10px;
+    margin: 10px 0;
     font-size: 14px;
   }
 `

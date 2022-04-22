@@ -3,7 +3,7 @@ import { Button, Cards, Container, Details, Resume } from "./styles";
 function About() {
   return (
     <Container>
-      <h1>About</h1>
+      <h1>Sobre mim</h1>
       <Resume>
         <div className="img">
           <img src="picture.jpeg" alt="" />

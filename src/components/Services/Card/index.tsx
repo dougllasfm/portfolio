@@ -1,17 +1,32 @@
-import { Container, List, Title } from './styles';
+import { Container, Content, List, Title } from "./styles";
 
-function Card() {
+type CardProps = {
+  name: string;
+  about: string
+  techs: string[]
+};
+
+function Card({name, about, techs}: CardProps) {
   return (
     <Container>
-      <Title><h1>E-commerce</h1></Title>
-      <List>
-        <li>Nextjs</li>
-        <li>Styled-components</li>
-        <li>Teste</li>
-        <li>Teste</li>
-      </List>
+      <Title>
+        <h1>{name}</h1>
+      </Title>
+      <Content>
+        <span>
+          {about}
+        </span>
+        <h2>Tecnologias utilizadas</h2>
+        <List>
+          {techs.map(element => {
+            return (
+              <li key={element}>{element}</li>
+            )
+          })}
+        </List>
+      </Content>
     </Container>
   );
-};
+}
 
 export default Card;
