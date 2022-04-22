@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   cursor: pointer;
-  width: 240px;
-  height: 254px;
+  height: fit-content;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -15,7 +14,7 @@ export const Container = styled.div`
 
   &:hover {
     background: var(--primary);
-    border: 1px solid var(--dark);
+    border-color: var(--dark);
   }
 `;
 

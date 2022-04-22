@@ -41,7 +41,7 @@ export const NavBar = styled.div`
       transition: var(--transition);
 
       &:hover {
-        border-bottom: 2px solid var(--yellow);
+        border-bottom: 2px solid var(--secondary);
       }
     }
   }
@@ -77,7 +77,7 @@ export const Panel = styled.div`
     > a {
       padding: 6px 18px;
       border-radius: 12px;
-      background-color: var(--yellow);
+      background-color: var(--secondary);
       color: var(--black);
       font-size: 14px;
       font-weight: bold;

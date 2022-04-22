@@ -23,8 +23,8 @@ export const Content = styled.div`
 `;
 
 export const Cards = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 `
