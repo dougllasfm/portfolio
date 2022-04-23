@@ -1,12 +1,13 @@
-import { Container, Content, List, Title } from "./styles";
+import { Container, Content, GithubLink, List, Title } from "./styles";
 
 type CardProps = {
   name: string;
   about: string
   techs: string[]
+  github: string
 };
 
-function Card({name, about, techs}: CardProps) {
+function Card({name, about, techs, github}: CardProps) {
   return (
     <Container>
       <Title>
@@ -24,6 +25,7 @@ function Card({name, about, techs}: CardProps) {
             )
           })}
         </List>
+        <GithubLink href={github} target="_blank">Github</GithubLink>
       </Content>
     </Container>
   );

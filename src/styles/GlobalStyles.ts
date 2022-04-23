@@ -20,6 +20,10 @@ export default createGlobalStyle`
     background-image: url("bg-texture.png");
   }
 
+  a {
+    color: inherit;
+  }
+
   :root {
     --primary: #11101d;
     --white: #FFFFFF;

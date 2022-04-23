@@ -65,3 +65,20 @@ export const List = styled.ul`
     font-size: 14px;
   }
 `
+
+export const GithubLink = styled.a`
+  margin-top: 5px;
+
+  background: transparent;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  border-radius: 5px;
+  
+  padding: 6px 10px;
+  transition: var(--transition);
+  &:hover {
+    background: var(--grayLight);
+    color: var(--primary);
+    border-color: var(--grayLight);
+  }
+`

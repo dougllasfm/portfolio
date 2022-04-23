@@ -13,11 +13,12 @@ import {
   Typescript
 } from "styled-icons/simple-icons";
 
-export const Container = styled.div`
+export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 50vh;
+  padding: 20px 0 60px;
 
   > h1 {
     color: var(--secondary);

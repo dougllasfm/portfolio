@@ -1,7 +1,6 @@
 import { Github } from "@styled-icons/boxicons-logos/Github";
 import { Instagram } from "@styled-icons/boxicons-logos/Instagram";
 import { Twitter } from "@styled-icons/boxicons-logos/Twitter";
-import { Copyright } from "@styled-icons/boxicons-regular/Copyright";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
@@ -17,6 +16,12 @@ export const Container = styled.div`
     font-size: 30px;
     color: var(--primary);
     margin: 20px;
+    transition: var(--transition);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--grayLight)
+    }
   }
 
   > div {
@@ -34,6 +39,7 @@ export const Container = styled.div`
 
 export const List = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin: 20px;
@@ -43,6 +49,11 @@ export const List = styled.ul`
     font-size: 15px;
     margin: 10px;
     cursor: pointer;
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--grayLight)
+    }
   }
 `
 
@@ -88,9 +99,3 @@ export const TwitterIcon = styled(Twitter)`
   ${iconsCss};
 `;
 
-export const IconCopyright = styled(Copyright)`
-  width: 14px;
-  height: 14px;
-  color: var(--primary);
-  margin-right: 5px;
-`;

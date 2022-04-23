@@ -3,11 +3,11 @@ import { Email } from "@styled-icons/material-rounded/Email";
 import { Whatsapp } from "@styled-icons/remix-fill/Whatsapp";
 import styled, { css } from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 0;
+  padding: 20px 0 60px;
 
   min-height: 80vh;
 
@@ -62,6 +62,7 @@ export const Form = styled.form`
     outline: none;
     border-radius: 4px;
     resize: none;
+    min-height: 100px;
 
     border: 1px solid var(--dark);
     box-sizing: border-box;
@@ -125,6 +126,13 @@ export const Networks = styled.div`
     > span {
       color: var(--gray);
       font-weight: bold;
+      font-size: 12px;
+    }
+
+    > p {
+      margin-top: 6px;
+      font-weight: bold;
+      color: var(--secondary);
       font-size: 12px;
     }
   }

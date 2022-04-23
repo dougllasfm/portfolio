@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.section`
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px 0 60px;
 
   > h1 {
     color: var(--secondary);
@@ -83,7 +84,14 @@ export const Button = styled.button`
   padding: 14px 16px;
   border-radius: 6px;
   background: var(--secondary);
-  color: var(--black);
+  color: var(--title);
   font-size: 14px;
   border: none;
+  cursor: pointer;
+
+  transition: var(--transition);
+
+  &:hover {
+    background: var(--grayLight);
+  }
 `;

@@ -2,16 +2,23 @@ import { Container, Content, NavBar, Panel } from "./styles";
 
 function Header() {
   return (
-    <Container>
+    <Container id="home">
       <Content>
         <NavBar>
           <h1>Portfólio</h1>
           <ul>
-            <li>Home</li>
-            <li>Sobre</li>
-            <li>Linguagens</li>
-            <li>Projetos</li>
-            <li>Contato</li>
+            <li>
+              <a href="#about">Sobre</a>
+            </li>
+            <li>
+              <a href="#techs">Linguagens</a>
+            </li>
+            <li>
+              <a href="#projects">Projetos</a>
+            </li>
+            <li>
+              <a href="#contact">Contato</a>
+            </li>
           </ul>
         </NavBar>
         <Panel>

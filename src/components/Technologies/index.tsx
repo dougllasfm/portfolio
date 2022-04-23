@@ -14,7 +14,7 @@ import {
 
 function Technologies() {
   return (
-    <Container>
+    <Container id="techs">
       <h1>Linguagens / Frameworks / Bibliotecas</h1>
       <Icons>
         <div>
