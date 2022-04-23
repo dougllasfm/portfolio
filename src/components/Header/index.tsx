@@ -8,9 +8,10 @@ function Header() {
           <h1>Portfólio</h1>
           <ul>
             <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
+            <li>Sobre</li>
+            <li>Linguagens</li>
+            <li>Projetos</li>
+            <li>Contato</li>
           </ul>
         </NavBar>
         <Panel>
