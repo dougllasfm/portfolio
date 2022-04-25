@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container, Content, NavBar, Panel } from "./styles";
 
 function Header() {
@@ -28,7 +29,7 @@ function Header() {
             <span>ashashushaushaushaushaushaushaushauhsua</span>
             <a href="#contact">Contato</a>
           </div>
-          <img src="picture.jpeg" alt="" />
+          <Image src="/picture.jpeg" alt="Peril" width={330} height={330} />
         </Panel>
       </Content>
     </Container>

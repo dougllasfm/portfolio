@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button, Cards, Container, Details, Resume } from "./styles";
 
 function About() {
@@ -6,7 +7,11 @@ function About() {
       <h1>Sobre mim</h1>
       <Resume>
         <div className="img">
-          <img src="picture.jpeg" alt="" />
+          <Image
+            src="/picture.jpeg"
+            alt="Foto de perfil"
+            width="100%" height="100%" layout="responsive" objectFit="contain"
+          />
         </div>
         <Details>
           <Cards>

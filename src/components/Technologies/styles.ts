@@ -20,6 +20,17 @@ export const Container = styled.section`
   height: 50vh;
   padding: 20px 0 60px;
 
+  width: var(--container-width-lg);
+  margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    width: var(--container-width-md);
+  }
+
+  @media (max-width: 600px) {
+    width: var(--container-width-ms);
+  }
+
   > h1 {
     color: var(--secondary);
     margin-bottom: 50px;

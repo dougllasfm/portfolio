@@ -1,17 +1,22 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  width: var(--container-width-lg);
+  margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    width: var(--container-width-md);
+  }
+
+  @media (max-width: 600px) {
+    width: var(--container-width-ms);
+  }
 
   height: 100vh;
 `;
 
 export const Content = styled.div`
   margin: 40px auto;
-  width: 80%;
 `;
 
 export const NavBar = styled.div`
@@ -91,12 +96,8 @@ export const Panel = styled.div`
         background: var(--grayLight);
       }
     }
-  }
-
-  > img {
-    width: 340px;
-    height: 340px;
+  } 
+  > span {
     border-radius: 50%;
-    overflow: hidden;
   }
 `;

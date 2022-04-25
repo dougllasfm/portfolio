@@ -10,6 +10,16 @@ export const Container = styled.section`
   padding: 20px 0 60px;
 
   min-height: 80vh;
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  
+  @media (max-width: 1024px) {
+    width: var(--container-width-md);
+  }
+
+  @media (max-width: 600px) {
+    width: var(--container-width-ms);
+  }
 
   > h1 {
     color: var(--secondary);
@@ -19,16 +29,17 @@ export const Container = styled.section`
 `;
 
 export const Content = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  width: 100%;
+  
 `;
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column ;
   margin-top: 20px;
-  width: 70%;
 
   > p {
     font-size: 14px;
@@ -107,6 +118,7 @@ export const Networks = styled.div`
     cursor: pointer;
 
     height: fit-content;
+    width: 80%;
     background: var(--dark);
     border: 1px solid var(--dark);
     border-radius: 12px;

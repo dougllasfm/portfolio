@@ -5,6 +5,16 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: var(--container-width-lg);
+  margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    width: var(--container-width-md);
+  }
+
+  @media (max-width: 600px) {
+    width: var(--container-width-ms);
+  }
   padding: 20px 0 60px;
 
   > h1 {
@@ -15,10 +25,9 @@ export const Container = styled.section`
 `;
 
 export const Resume = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 80%;
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
 
   .img {
     margin: 0 40px;
@@ -34,10 +43,8 @@ export const Resume = styled.div`
     height: 330px;
     place-items: center;
 
-    > img {
+    > span {
       border-radius: 20px;
-      width: 330px;
-      height: 330px;
       overflow: hidden;
       transform: rotate(5deg); /* Equal to rotateZ(45deg) */
       transition: var(--transition);
@@ -46,14 +53,22 @@ export const Resume = styled.div`
         transform: rotate(0);
       }
     }
+
+    @media (max-width: 900px) {
+      width: 280px;
+      height: 280px;
+    }
+
+    @media (max-width: 790px) {
+      width: 220px;
+      height: 220px;
+    }
   }
 `;
 
 export const Details = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 40px;
-  width: 50%;
 
   > span {
     margin: 10px 0;
@@ -66,15 +81,11 @@ export const Cards = styled.div`
   gap: 5px;
 
   > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
+    text-align: center;
+
     background: var(--dark);
     border-radius: 10px;
-    width: 165px;
-    height: 140px;
+    padding: 40px 20px;
   }
 `;
 

@@ -4,12 +4,12 @@ import { Twitter } from "@styled-icons/boxicons-logos/Twitter";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px 0;
-
+  width: 100%;
+  margin: 0 auto;
   background: var(--secondary);
 
   > h1 {
