@@ -22,6 +22,10 @@ export const Container = styled.div`
     &:hover {
       color: var(--grayLight)
     }
+
+    @media (max-width: 600px) {
+      font-size: 16px;
+    }
   }
 
   > div {

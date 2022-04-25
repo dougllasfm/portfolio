@@ -26,7 +26,6 @@ function Header() {
           <div>
             <h1>Douglas Munaro</h1>
             <h5>Fullstack Developer</h5>
-            <span>ashashushaushaushaushaushaushaushauhsua</span>
             <a href="#contact">Contato</a>
           </div>
           <Image src="/picture.jpeg" alt="Peril" width={330} height={330} />

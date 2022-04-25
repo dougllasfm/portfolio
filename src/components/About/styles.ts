@@ -21,13 +21,22 @@ export const Container = styled.section`
     color: var(--secondary);
     margin-bottom: 50px;
     font-size: 24px;
+
+    @media (max-width: 600px) {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 0;
   }
 `;
 
 export const Resume = styled.div`
   display: grid;
-  grid-template-columns: 35% 50%;
-  gap: 15%;
+  grid-template-columns: 40% 50%;
+  gap: 10%;
 
   .img {
     margin: 0 40px;
@@ -62,23 +71,46 @@ export const Resume = styled.div`
     @media (max-width: 790px) {
       width: 220px;
       height: 220px;
+      margin: 0;
     }
+
+    @media (max-width: 600px) {
+      width: 180px;
+      height: 180px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
 export const Details = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   > span {
     margin: 10px 0;
+
+    @media (max-width: 790px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 12px;
+      margin: 5px 0;
+    }
   }
 `;
 
 export const Cards = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 
   > div {
     text-align: center;
@@ -86,6 +118,38 @@ export const Cards = styled.div`
     background: var(--dark);
     border-radius: 10px;
     padding: 40px 20px;
+
+    > h5 {
+      font-size: 14px;
+    }
+
+    > span {
+      font-size: 12px;
+    }
+
+    @media (max-width: 790px) {
+      padding: 30px 15px;
+
+      > h5 {
+        font-size: 12px;
+      }
+
+      > span {
+        font-size: 10px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      padding: 20px 10px;
+
+      > h5 {
+        font-size: 10px;
+      }
+
+      > span {
+        font-size: 8px;
+      }
+    }
   }
 `;
 
@@ -104,5 +168,15 @@ export const Button = styled.button`
 
   &:hover {
     background: var(--grayLight);
+  }
+
+  @media (max-width: 790px) {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 10px 8px;
+    font-size: 12px;
   }
 `;

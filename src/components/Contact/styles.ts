@@ -12,7 +12,7 @@ export const Container = styled.section`
   min-height: 80vh;
   width: var(--container-width-lg);
   margin: 0 auto;
-  
+
   @media (max-width: 1024px) {
     width: var(--container-width-md);
   }
@@ -25,6 +25,10 @@ export const Container = styled.section`
     color: var(--secondary);
     font-size: 24px;
     margin-bottom: 10px;
+
+    @media (max-width: 600px) {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -33,12 +37,15 @@ export const Content = styled.div`
   grid-template-columns: 1fr 2fr;
   gap: 20px;
   width: 100%;
-  
+
+  @media (max-width: 600px) {
+    gap: 10px;
+  }
 `;
 
 export const Form = styled.form`
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   margin-top: 20px;
 
   > p {
@@ -80,14 +87,14 @@ export const Form = styled.form`
     font-size: 16px;
     background: var(--primary);
     color: var(--white);
-    
+
     &:focus {
       outline: 1px solid var(--secondary);
     }
   }
 
   input[type="submit"] {
-    width: 20%;
+    width: 100%;
     background-color: var(--secondary);
     color: #000;
     padding: 14px 20px;
@@ -125,6 +132,10 @@ export const Networks = styled.div`
     padding: 30px 20px;
     transition: var(--transition);
 
+    @media (max-width: 600px) {
+      padding: 15px 10px;
+    }
+
     &:hover {
       background: var(--primary);
     }
@@ -133,12 +144,21 @@ export const Networks = styled.div`
       font-size: 14px;
       margin: 10px 0 3px;
       color: var(--grayLight);
+
+      @media (max-width: 600px) {
+        font-size: 12px;
+      }
     }
 
     > span {
       color: var(--gray);
       font-weight: bold;
       font-size: 12px;
+      text-align: center;
+      
+      @media (max-width: 600px) {
+        font-size: 10px;
+      }
     }
 
     > p {
@@ -146,6 +166,10 @@ export const Networks = styled.div`
       font-weight: bold;
       color: var(--secondary);
       font-size: 12px;
+
+      @media (max-width: 600px) {
+        font-size: 10px;
+      }
     }
   }
 `;

@@ -35,6 +35,10 @@ export const Container = styled.section`
     color: var(--secondary);
     margin-bottom: 50px;
     font-size: 24px;
+
+    @media (max-width: 600px) {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -42,6 +46,7 @@ export const Icons = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin: 30px;
   gap: 25px;
 
@@ -56,12 +61,22 @@ export const Icons = styled.div`
       color: var(--grayLight);
     }
   }
+
+  @media (max-width: 600px) {
+    margin: 5px;
+    gap: 10px;
+  }
 `;
 
 export const iconCss = css`
   width: 34px;
   height: 34px;
   color: var(--grayLight);
+
+  @media (max-width: 600px) {
+    width: 20px;
+    height: 20px;
+  }
 `;
 
 export const TypeScriptIcon = styled(Typescript)`

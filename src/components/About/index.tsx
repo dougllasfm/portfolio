@@ -10,32 +10,29 @@ function About() {
           <Image
             src="/picture.jpeg"
             alt="Foto de perfil"
-            width="100%" height="100%" layout="responsive" objectFit="contain"
+            width="100%"
+            height="100%"
+            layout="responsive"
+            objectFit="contain"
           />
         </div>
         <Details>
           <Cards>
             <div>
-              <h5>Experencia</h5>
-              <span>Tal tal tal</span>
+              <h5>Desenvolvedor web fullstack</h5>
+              <span>2 anos</span>
             </div>
             <div>
-              <h5>Experencia</h5>
-              <span>Tal tal tal</span>
-            </div>
-            <div>
-              <h5>Experencia</h5>
-              <span>Tal tal tal</span>
+              <h5>Idade</h5>
+              <span>23 anos</span>
             </div>
           </Cards>
           <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Olá! Meu nome é Douglas Felipe Munaro, desenvolvedor full-stack web,
+            comecei a ter contato com a programação na faculdade a partir de
+            2016, atualmente estudo as novas bibliotecas e frameworks
+            javascript/typescript, e crio projetos para práticar e expor meus
+            conhecimentos.
           </span>
           <Button>
             <a href="#contact">Fale comigo</a>

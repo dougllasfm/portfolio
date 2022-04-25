@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   cursor: pointer;
@@ -15,8 +15,6 @@ export const Container = styled.div`
   &:hover {
     background: var(--primary);
   }
-
-  
 `;
 
 export const Title = styled.div`
@@ -33,8 +31,12 @@ export const Title = styled.div`
   > h1 {
     font-size: 16px;
     color: var(--title);
+
+    @media (max-width: 790px) {
+      font-size: 14px;
+    }
   }
-`
+`;
 
 export const Content = styled.div`
   display: flex;
@@ -49,13 +51,21 @@ export const Content = styled.div`
     font-size: 16px;
     margin-bottom: 15px;
     color: var(--grayLight);
+
+    @media (max-width: 790px) {
+      font-size: 14px;
+    }
   }
 
   > h2 {
     font-size: 16px;
     color: var(--grayLight);
+
+    @media (max-width: 790px) {
+      font-size: 14px;
+    }
   }
-`
+`;
 
 export const List = styled.ul`
   list-style: inside;
@@ -64,7 +74,7 @@ export const List = styled.ul`
     margin: 10px 0;
     font-size: 14px;
   }
-`
+`;
 
 export const GithubLink = styled.a`
   margin-top: 5px;
@@ -73,7 +83,7 @@ export const GithubLink = styled.a`
   border: 1px solid var(--secondary);
   color: var(--secondary);
   border-radius: 5px;
-  
+
   padding: 6px 10px;
   transition: var(--transition);
   &:hover {
@@ -81,4 +91,9 @@ export const GithubLink = styled.a`
     color: var(--primary);
     border-color: var(--grayLight);
   }
-`
+
+  @media (max-width: 790px) {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+`;
