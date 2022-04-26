@@ -31,6 +31,7 @@ const schema = yup
   .required();
 
 function Contact() {
+
   const {
     register,
     handleSubmit,
@@ -39,7 +40,7 @@ function Contact() {
     resolver: yupResolver(schema),
   });
 
-  const form = useRef();
+  const form = useRef() as React.MutableRefObject<HTMLFormElement>;
 
   async function onSubmit(data: FormProps) {
     try {
@@ -48,7 +49,9 @@ function Contact() {
         "template_j5cptma",
         form.current,
         "mshXbIR1oLqBQ8MCM"
-      );
+      ).then(() => {  
+        alert("Email enviado com sucesso")
+      })
     } catch (error) {
       console.log(error);
     }
