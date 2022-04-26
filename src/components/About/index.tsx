@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button, Cards, Container, Details, Resume } from "./styles";
+import { Button, Cards, Container, Details, IconDev, IconUser, Resume } from "./styles";
 
 function About() {
   return (
@@ -8,21 +8,18 @@ function About() {
       <Resume>
         <div className="img">
           <Image
-            src="/picture.jpeg"
-            alt="Foto de perfil"
-            width="100%"
-            height="100%"
-            layout="responsive"
-            objectFit="contain"
+            src="/perfil.jpg" alt="Peril" width={300} height={300}
           />
         </div>
         <Details>
           <Cards>
             <div>
+              <IconDev />
               <h5>Desenvolvedor web fullstack</h5>
               <span>2 anos</span>
             </div>
             <div>
+              <IconUser />
               <h5>Idade</h5>
               <span>23 anos</span>
             </div>

@@ -13,7 +13,7 @@ export const Container = styled.section`
   }
 
   height: 100vh;
-  @media (max-width: 600px) {
+  @media (max-width: 880px) {
     height: 70vh;
   }
 `;
@@ -91,6 +91,7 @@ export const Panel = styled.div`
   justify-content: space-between;
   width: 100%;
   margin-top: 60px;
+  
 
   > div {
     display: flex;

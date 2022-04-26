@@ -1,3 +1,4 @@
+import Head from "next/head";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -8,7 +9,12 @@ import { Container } from "../styles/index";
 
 export default function Home() {
   return (
-    <Container>
+    <>
+      <Head>
+        <title>Douglas Munaro</title>
+        <link rel="icon" href="/icon.png" />
+      </Head>
+      <Container>
       <Header />
       <About />
       <Technologies />
@@ -16,5 +22,7 @@ export default function Home() {
       <Contact />
       <Footer />
     </Container>
+    </>
+    
   );
 }

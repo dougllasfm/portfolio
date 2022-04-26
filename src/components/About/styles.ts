@@ -1,3 +1,5 @@
+import { User } from "@styled-icons/boxicons-solid/User";
+import { Computer } from "@styled-icons/remix-fill/Computer";
 import styled from "styled-components";
 
 export const Container = styled.section`
@@ -48,8 +50,8 @@ export const Resume = styled.div`
     );
     border-radius: 20px;
     aspect-ratio: 1/1;
-    width: 330px;
-    height: 330px;
+    width: 300px;
+    height: 300px;
     place-items: center;
 
     > span {
@@ -118,6 +120,8 @@ export const Cards = styled.div`
     background: var(--dark);
     border-radius: 10px;
     padding: 40px 20px;
+    border: 1px solid var(--dark);
+    transition: var(--transition);
 
     > h5 {
       font-size: 14px;
@@ -150,6 +154,11 @@ export const Cards = styled.div`
         font-size: 8px;
       }
     }
+
+    &:hover {
+      background: var(--primary);
+      border-color: var(--secondary);
+    }
   }
 `;
 
@@ -179,4 +188,18 @@ export const Button = styled.button`
     padding: 10px 8px;
     font-size: 12px;
   }
+`;
+
+export const IconDev = styled(Computer)`
+  width: 20px;
+  height: 20px;
+  margin-bottom: 5px;
+  color: var(--grayLight);
+`;
+
+export const IconUser = styled(User)`
+  width: 20px;
+  height: 20px;
+  color: var(--grayLight);
+  margin-bottom: 5px;
 `;
