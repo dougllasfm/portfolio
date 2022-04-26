@@ -90,7 +90,7 @@ export const Panel = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 90px;
   
 
   > div {

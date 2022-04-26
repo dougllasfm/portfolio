@@ -39,6 +39,7 @@ export const Resume = styled.div`
   display: grid;
   grid-template-columns: 40% 50%;
   gap: 10%;
+  margin-top: 20px;
 
   .img {
     margin: 0 40px;

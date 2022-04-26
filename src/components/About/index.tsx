@@ -25,7 +25,7 @@ function About() {
             </div>
           </Cards>
           <span>
-            Olá! Meu nome é Douglas Felipe Munaro, desenvolvedor full-stack web,
+            Olá! Meu nome é Douglas Felipe Munaro, desenvolvedor web fullstack,
             comecei a ter contato com a programação na faculdade a partir de
             2016, atualmente estudo as novas bibliotecas e frameworks
             javascript/typescript, e crio projetos para práticar e expor meus
