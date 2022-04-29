@@ -73,7 +73,7 @@ function Contact() {
             <span>+55 (66) 996152628</span>
             <p>
               <a
-                href="https://api.whatsapp.com/send?phone=+5566996152628"
+                href="https://api.whatsapp.com/send?phone=5566996152628"
                 target="_blank"
                 rel="noreferrer"
               >
